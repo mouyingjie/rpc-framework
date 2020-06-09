@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://www.dongnaoedu.com/schema/soa"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.dongnaoedu.com/schema/soa
+        http://www.dongnaoedu.com/schema/soa.xsd"
+        default-lazy-init="true">
+    <bean id="frameWorkTestService" class="com.demo.webProvider.framework.FrameWorkTestServiceImpl"/>
+    <dubbo:service protocol="http" interface="com.demo.webProvider.framework.FrameWorkTestService"  ref="frameWorkTestService" ></dubbo:service>
+    <dubbo:registry protocol="redis" address="127.0.0.1:6379"></dubbo:registry>
+    <dubbo:protocol name="rmi" port="8080" host="127.0.0.1" contextpath="/rpc-framework/consumer/http"></dubbo:protocol>
+</beans>

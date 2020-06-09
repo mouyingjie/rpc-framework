@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/consumerWeb/consumerWeb.iml" filepath="$PROJECT_DIR$/consumerWeb/consumerWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provideWeb/provideWeb.iml" filepath="$PROJECT_DIR$/provideWeb/provideWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provider/provider.iml" filepath="$PROJECT_DIR$/provider/provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-framework.iml" filepath="$PROJECT_DIR$/rpc-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webProvider/webProvider.iml" filepath="$PROJECT_DIR$/webProvider/webProvider.iml" />
+    </modules>
+  </component>
+</project>
